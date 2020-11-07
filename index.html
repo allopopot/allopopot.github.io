@@ -4,112 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pascoal Daniel Fernandes</title>
-    <style>
-        *,html{
-            padding: 0px;
-            margin: 0px;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            scroll-behavior: smooth;
-        }
-        body{
-            overflow: hidden;
-        }
-        .pane{
-            width: 100%;
-            height: 100vh;
-        }
-        #paneOne{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #paneOne video{
-            width: 80%;
-            height: 80%;
-        }
-        #paneTwo{
-            background-color: black;
-            padding: 10rem;
-            color: white;
-        }
-        #paneThree{
-            background-color: white;
-            color: black;
-            padding: 5%;
-        }
-        #paneFour{
-            padding: 5%;
-            background-color: black;
-            color: white;
-        }
-        #paneFive{
-            padding: 5%;
-            background-color: white;
-            color: black;
-        }
-        #paneSix{
-            padding: 5%;
-            background-color: black;
-            color: white;
-        }
-        #paneSeven{
-            padding: 5%;
-            background-color: white;
-            color: black;
-        }
-
-        #previousBtn{
-            position: fixed;
-            z-index: 1000;
-            bottom: 0px;
-            left: 0px;
-            height: 100%;
-            width: 4vw;
-            opacity: 0;
-            transition: opacity .5s;
-            border: none;
-        }
-
-        #previousBtn:hover{
-            transition: opacity .5s;
-            opacity: .4;
-        }
-
-        #nextBtn{
-            position: fixed;
-            z-index: 1000;
-            bottom: 0px;
-            right: 0px;
-            height: 100%;
-            width: 4vw;
-            opacity: 0;
-            transition: opacity .5s;
-            border: none;
-        }
-
-        #nextBtn:hover{
-            transition: opacity .5s;
-            opacity: .4;
-        }
-
-        .pane h1{
-            margin-bottom: 2rem;
-        }
-    
-        ul li{
-            text-indent: 2em;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <div id="paneOne" class="pane">
-        <video src="Animation Square.mp4" autoplay></video>
+        <video id="logoAnimation" src="Animation Square.mp4" autoplay onended="animatePaneTwo()"></video>
     </div>
 
     <div id="paneTwo" class="pane">
-        <h1>Pascoal Daniel Fernandes</h1>
-        <p>A dumbass intro to be avaiable.</p>
+        <h1 id="introElement"></h1>
+        
+        
     </div>
 
     <div id="paneThree" class="pane">
@@ -182,26 +87,13 @@
         </ul>
     </div>
 
+    <div id="paneEight" class="pane">
+        <h1>Web CV in development.</h1>
+    </div>
+
     <button onclick="scroller('up')" id="previousBtn">Previous</button>
     <button onclick="scroller('down')" id="nextBtn">Next</button>
 
-    <script>
-        
-        var panes = ['paneOne','paneTwo','paneThree','paneFour','paneFive','paneSix','paneSeven'];
-        var a = 0;
-        window.location.hash = panes[a];
-        function scroller(direction){
-            
-            if(direction === 'down'){
-                if (a >= panes.length-1) return;
-                a=a+1;
-                window.location.hash = panes[a];
-            } else if (direction === 'up') {
-                if (a == 0) return;
-                a=a-1;
-                window.location.hash = panes[a];
-            }
-        }
-    </script>
+    <script src="script.js" defer></script>
 </body>
 </html>
