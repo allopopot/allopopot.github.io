@@ -3,97 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pascoal Daniel Fernandes</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>AlloPopoT</title>
+    <link rel="stylesheet" href="tailwind.min.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div id="paneOne" class="pane">
-        <video id="logoAnimation" src="Animation Square.mp4" autoplay onended="animatePaneTwo()"></video>
+    <nav class="w-full sticky top-0 shadow-lg flex flex-wrap md:flex-nowrap justify-between items-center bg-white px-5 py-3">
+        <div class="flex justify-between w-full">
+            <a href="#" class="font-black text-xl text-transparent bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text ">AlloPopoT</a>
+            <button id="collapse-button" class="bg-gray-400 text-white md:hidden lg:hidden p-1 rounded-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                    <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                </svg>
+            </button>
+        </div>
+        <div id="collapse-menu" class="gap-3 hidden md:flex flex-col md:flex-row mt-8 md:mt-auto w-full md:w-auto ">
+            <button class="px-3 py-2 bg-green-500 hover:bg-green-600 text-white font-semibold rounded">Home</button>
+            <button class="px-3 py-2 bg-green-500 hover:bg-green-600 text-white font-semibold rounded">About</button>
+        </div>
+    </nav>
+    <div class="flex flex-col md:flex-row items-center" style="background-color: #FA532E;">
+        <div class="md:order-2 md:w-1/2">
+            <video src="Square.mp4" autoplay loop></video>
+        </div>
+        <div class="text-left md:text-right m-5 text-white md:w-1/2">
+            <h1 class="font-black text-6xl">Allo, There Mate!!!</h1>
+            <p class="font-semibold text-2xl">I'm Pascoal Daniel Fernandes!</p>
+        </div>
     </div>
-
-    <div id="paneTwo" class="pane">
-        <h1 id="introElement"></h1>
-        
-        
+    <div class="h-screen w-full bg-blue-500 flex justify-center items-center p-5">
+        <p class="text-4xl text-white text-center font-semibold">More Content Coming Soon!</p>
     </div>
-
-    <div id="paneThree" class="pane">
-        <h1>Educational Qualifications</h1>
-
-        <h2>Secondary School Certificate (SSC)</h2>
-        <ul>
-            <li>June 2013 — April 2014</li>
-            <li>St. Theresa's High School, Goa</li>
-            <li>Goa Board of Secondary and Higher Secondary Education</li>
-            <li>Percentage: 65.4%</li>
-        </ul>
-
-        <h2>Central Board of Secondary Education (CBSE)</h2>
-        <ul>
-            <li>June 2014 — April 2016</li>
-            <li>Buds Public School, Dubai, UAE</li>
-            <li>Stream: Commerce</li>
-            <li>Percentage: 69.2%</li>
-        </ul>
-
-        <h2>Bachelor of Computer Applications (BCA)</h2>
-        <ul>
-            <li>June 2016 — June 2019</li>
-            <li>St. Xavier's College - Mapusa, Goa</li>
-            <li>CPI (Cumulative Performance Index): 7.96</li>
-        </ul>
+    <div class="bg-gray-200 text-center py-5">
+        <p class="font-semibold">Build With <a target="_blank" href="https://tailwindcss.com/" class="hover:underline text-blue-500">Tailwind CDN</a></p>
+        <p class="font-semibold">Icons from <a target="_blank" href="https://icons.getbootstrap.com/" class="hover:underline text-blue-500">Bootstrap Icons</a></p>
     </div>
-    <div id="paneFour" class="pane">
-        <h1>Skills</h1>
-        <ul>
-            <li>Good Knowledge of Object Oriented Programming Concepts.</li>
-            <li>Good Programming Experience in VB.net.</li>  
-            <li>Good Knowledge of HTML, CSS, JavaScript.</li>          
-            <li>Good Experience in MySQL Database Systems.</li>
-            <li>Good Programming Experience in PHP Language.</li>
-            <li>Good Experience in Python Programming Language.</li>
-            <li>Familiar in installations and usage of Operating Systems such as Windows and Linux.</li>
-            <li>Familiar with Hardware Troubleshooting.</li>
-        </ul>
-    </div>
-
-    <div id="paneFive" class="pane">
-        <h1>Additional Qualifications</h1>
-        <ul>
-            <li>Won first place in the Event REDUCE, REUSE, RECYCLE at National Level IT
-                Event, Technotronics 2018 at Dnyanprassak Mandal's College & Research
-                Center, Assagao-Bardez, Goa.</li>
-            <li>Runner Up in the Event ANDY THE INVENTOR at National Level IT Event,
-                Technotronics 2018 at Dnyanprassak Mandal's College & Research Center,
-                Assagao-Bardez, Goa.</li>  
-        </ul>
-    </div>
-
-    <div id="paneSix" class="pane">
-        <h1>Interests</h1>
-        <ul>
-            <li>Researching about new technology.</li>
-            <li>Creating Websites and Applications.</li>  
-            <li>Travelling Places.</li>
-        </ul>
-    </div>
-
-    <div id="paneSeven" class="pane">
-        <h1>Work Experience</h1>
-        <h2>IHCL Taj Holiday Village Resort & Spa</h2>
-        <ul>
-            <li>15 May 2019 — 15 August 2019</li>
-            <li>Trainee as a IT Support Engineer and Wi-Fi Engineer.</li>  
-        </ul>
-    </div>
-
-    <div id="paneEight" class="pane">
-        <h1>Web CV in development.</h1>
-    </div>
-
-    <button onclick="scroller('up')" id="previousBtn">Previous</button>
-    <button onclick="scroller('down')" id="nextBtn">Next</button>
-
-    <script src="script.js" defer></script>
 </body>
 </html>
