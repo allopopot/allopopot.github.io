@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AlloPopoT</title>
     <link rel="stylesheet" href="tailwind.min.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -22,19 +23,20 @@
             <button class="px-3 py-2 bg-green-500 hover:bg-green-600 text-white font-semibold rounded">About</button>
         </div>
     </nav>
-    <div class="flex flex-col md:flex-row items-center" style="background-color: #FA532E;">
-        <div class="md:order-2 md:w-1/2">
+    <div class="flex justify-center items-center" style="background-color: #FA532E;">
+        <div class="lg:order-2 lg:w-1/2">
             <video src="Square.mp4" autoplay loop></video>
         </div>
-        <div class="text-left md:text-right m-5 text-white md:w-1/2">
-            <h1 class="font-black text-6xl">Allo, There Mate!!!</h1>
-            <p class="font-semibold text-2xl">I'm Pascoal Daniel Fernandes!</p>
-        </div>
+    </div>
+    <div id="paneTwo" class="text-justify p-20 text-transparent bg-clip-text">
+       <p class="text-5xl lg:text-8xl font-semibold">Allo,</p>
+       <p class="text-4xl lg:text-7xl font-semibold">There Mate!!!</p>
+       <p class="text-3xl lg:text-6xl">The Name's <span class="font-bold">Pascoal Daniel Fernandes</span>.</p>
     </div>
     <div class="h-screen w-full bg-blue-500 flex justify-center items-center p-5">
         <p class="text-4xl text-white text-center font-semibold">More Content Coming Soon!</p>
     </div>
-    <div class="bg-gray-200 text-center py-5">
+    <div class="bg-gray-200 text-center py-5 ">
         <p class="font-semibold">Build With <a target="_blank" href="https://tailwindcss.com/" class="hover:underline text-blue-500">Tailwind CDN</a></p>
         <p class="font-semibold">Icons from <a target="_blank" href="https://icons.getbootstrap.com/" class="hover:underline text-blue-500">Bootstrap Icons</a></p>
     </div>

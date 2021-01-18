@@ -1,0 +1,14 @@
+#paneTwo {
+    background: linear-gradient(to right, #005aa7, #fffde4, #ff416c, #ff4b2b);
+    background-size: 400% 400%;
+
+    animation: AnimationName 10s ease infinite;
+    -webkit-background-clip: text;
+}
+
+
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
