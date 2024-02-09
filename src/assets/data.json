@@ -1,0 +1,136 @@
+{
+    "information": {
+        "Firstname": "Pascoal",
+        "Middlename": "Daniel",
+        "Lastname": "Fernandes",
+        "HomeAddress": "H.No. 741/A, Pintos Vaddo, Candolim, Bardez, Goa, India",
+        "CurrentAddress": "Deira, Dubai, United Arab Emirates",
+        "Gender": "Male",
+        "BirthDate": "8th August 1998",
+        "Nationality": "Indian",
+        "Religion": "Roman Catholic",
+        "References": "Upon Request",
+        "VisaStatus": "UAE Visa",
+        "MaritalStatus": "Single",
+        "Phone": [
+            "+91 88058 80742",
+            "+971 52 1699501"
+        ],
+        "Email": "pascoaldanielfernandes@gmail.com",
+        "Languages": [
+            "English",
+            "Hindi",
+            "Konkani"
+        ],
+        "Hobbies": [
+            "Building Homelabs",
+            "Learning new skills and technologies.",
+            "Troubleshooting Computers, Printers and Network Devices"
+        ]
+    },
+    "summary": [
+        "As a postgraduate immersed in the Master of Science in Information Technology, my educational odyssey represents not only the culmination of theoretical knowledge but an enduring exploration into the dynamic realm of IT. Navigating the complexities inherent in both hardware and software domains, I have embarked on a perpetual trajectory of learning.",
+        "During my three-month tenure in I.T. Support and subsequent one year and five months dedicated to Fullstack Development, I have not merely contributed to projects but actively assimilated novel insights and skills. My proficiency in constructing full-stack websites and formulating home labs serves not only as a demonstration of expertise but as a testament to my erudition ethos, wherein each project serves as a pivotal stepping stone for the refinement of my capabilities.",
+        "Networking, troubleshooting, and system maintenance, far from being mere entries on my resume, constitute ongoing challenges that sustain my engagement and nurture a perpetual eagerness for acquiring further knowledge. In essence, my progression in Information Technology is marked not solely by accomplished endeavors but by the continuous learning and iterative growth engendered by each distinctive experience."
+    ],
+    "considerationNote": "I respectfully request you to consider my ability, job performance, and adaptability more so than my resume if you offer me the chance to supply my services to your company, as I am confident enough to say that I will do so to the best pleasure of my superiors.",
+    "education": [
+        {
+            "degree": "Master of Science in Computer Science and Information Technology",
+            "start": "July 2020",
+            "end": "June 2022",
+            "institution": "Jain (Deemed to be) University, Bangalore, Karnataka",
+            "score": "CGPA (Cumulative Grade Point Average): 8.77"
+        },
+        {
+            "degree": "Bachelor of Computer Applications",
+            "start": "June 2016",
+            "end": "June 2019",
+            "institution": "St. Xavier's College - Mapusa, Goa",
+            "score": "CPI (Cumulative Performance Index): 7.96"
+        },
+        {
+            "degree": "HSSC (Higher Secondary School Certificate) - Central Board of Secondary Education (CBSE) - Commerce",
+            "start": "June 2014",
+            "end": "April 2016",
+            "institution": "Buds Public School, Dubai, UAE",
+            "score": "Percentage: 69.2%"
+        },
+        {
+            "degree": "SSC (Secondary School Certificate) - Goa Board of Secondary and Higher Secondary Education",
+            "start": "June 2013",
+            "end": "April 2014",
+            "institution": "St. Theresa's High School, Goa",
+            "score": "Percentage: 65.4%"
+        }
+    ],
+    "technologies": [
+        "HTML, CSS, JavaScript",
+        "Python, Node.js, PHP, C#",
+        "Vue.js, Express.js",
+        "LAMP Stack, MERN Stack",
+        "MySQL, MongoDB",
+        "Microsoft Windows 10 / 11 / Server Administration",
+        "Linux Administration - (RedHat Enterprise Linux, Oracle, Rocky)",
+        "Containerization (Podman / Docker)",
+        "Virtualization (Hyper-V, KVM/QEMU)",
+        "Hardware Troubleshooting",
+        "Networking in Cisco, Ubiquiti"
+    ],
+    "workExperience": [
+        {
+            "companyName": "IHCL Taj Holiday Village Resort & Spa, Sinquerim, Goa",
+            "level": "Trainee",
+            "designation": "I.T. Support Engineer and Network Engineer",
+            "start": "15 May 2019",
+            "end": "15 August 2019",
+            "duration": "3 Months",
+            "jobDescription": [
+                "Monitoring networks and configuring network devices.",
+                "Troubleshooting computer / printer problems.",
+                "Performing preventive maintenance on computers and printers."
+            ]
+        },
+        {
+            "companyName": "HELIX TECH, Porvorim, Goa",
+            "level": "Trainee",
+            "designation": "PHP Developer",
+            "start": "15 September 2019",
+            "end": "15 October 2019",
+            "duration": "1 Month",
+            "jobDescription": [
+                "Maintained Glenmark Pharmaceuticals company portal in PHP and MySQL."
+            ]
+        },
+        {
+            "companyName": "Ajency.in, Panjim, Goa (Internship)",
+            "level": "Intern",
+            "designation": "Node.js Developer",
+            "start": "16 February 2022",
+            "end": "17 June 2022",
+            "duration": "4 Months",
+            "jobDescription": [
+                "Coogle Created a leave management application using Node.js, React.js, Airtable, Make (Formerly Integromat) and hosted successfully using Heroku and Vercel.",
+                "Integrated Gmail, Google Calendar and Chat Bot in the application.",
+                "Gained hands-on experience with Amazon Web Services."
+            ]
+        },
+        {
+            "companyName": "Nathan Digital, Dubai, UAE",
+            "level": "Junior",
+            "designation": "Backend Developer (Node.js)",
+            "start": "17 January 2023",
+            "end": "Current",
+            "duration": "Current",
+            "jobDescription": [
+                "Implemented various new requirements and maintained and optimized the HRDirect Software in Node.js, Vue.js (Nuxt.js), Express.js and MongoDB with AWS SES.",
+                "Integrated various SSO (Single Sign-On) Strategies like Okta, Microsoft, Google",
+                "Integrated APIs from ZKTECO Biotime for attendance retrival."
+            ]
+        }
+    ],
+    "Achievements": [
+        "Won first place in the Event REDUCE, REUSE, RECYCLE at National Level IT Event, Technotronics 2018 at Dnyanprassak Mandal's College & Research Center, Assagao-Bardez, Goa.",
+        "Runner Up in the Event ANDY THE INVENTOR at National Level IT Event, Technotronics 2018 at Dnyanprassak Mandal's College & Research Center, Assagao-Bardez, Goa."
+    ]
+}
