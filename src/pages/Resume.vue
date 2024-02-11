@@ -29,7 +29,7 @@
             <p class="mb-1 text-center font-semibold">{{ information.email }}</p>
             <p class="mb-1 text-center font-semibold"> {{ information.phone.join() }}</p>
             <p class="mb-1 text-center font-semibold">{{ information.currentAddress }}</p>
-            
+
             <h1 class="text-xl mt-4 font-semibold">Key Skill</h1>
             <hr class="border-2 border-white rounded-sm my-2">
             <ul class="list-disc ml-4 list-outside">
@@ -64,8 +64,7 @@
     </div>
 
     <div class="a4page mx-auto p-6">
-        <hr class="border-2 border-gray-300 rounded-sm my-4">
-        <div>
+        <div class="mt-3">
             <h2 class="text-2xl font-bold">Work Experience</h2>
             <ul class="list-disc list-outside ml-4">
                 <li v-for="entry in workExperience.toReversed()" class="my-4">
@@ -83,9 +82,11 @@
             <h2 class="text-2xl font-bold">Achievements</h2>
             <p class="my-3" v-for="entry of achievements">{{ entry }}</p>
         </div>
+        <hr class="border-2 border-gray-300 rounded-sm my-4">
+        <p class="text-center italic text-gray-500">{{ considerationNote }}</p>
     </div>
 </template>
 
 <script setup>
-import { information, education, technologies, summary, workExperience, achievements } from "../assets/data.json"
+import { information, education, technologies, summary, workExperience, achievements, considerationNote } from "../assets/data.json"
 </script>
