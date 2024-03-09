@@ -17,7 +17,7 @@
             "+91 88058 80742",
             "+971 52 1699501"
         ],
-        "email": "pascoaldanielfernandes@gmail.com",
+        "email": "pascoaldanielfernandes@outlook.com",
         "languages": [
             "English",
             "Hindi",
@@ -125,9 +125,11 @@
             "end": "Current",
             "duration": "Current",
             "jobDescription": [
-                "Implemented various new requirements and maintained and optimized the HRDirect Software in Node.js, Vue.js (Nuxt.js), Express.js and MongoDB with AWS SES.",
+                "Implemented various new requirements and maintained in Node.js, Vue.js 2 & 3 (Nuxt.js), Express.js and MongoDB.",
+                "Optimized APIs using various JavaScript Methodologies.",
+                "Optimized MongoDB Queries for faster API response.",
                 "Integrated various SSO (Single Sign-On) Strategies like Okta, Microsoft, Google",
-                "Integrated APIs from ZKTECO Biotime for attendance retrival."
+                "Integrated APIs from ZKTECO Biotime for attendance retrival    ."
             ]
         }
     ],
