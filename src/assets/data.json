@@ -25,10 +25,11 @@
         ],
         "hobbies": [
             "Building Homelabs",
-            "Learning new skills and technologies.",
+            "Learning new skills and technologies",
             "Troubleshooting Computers, Printers and Network Devices"
         ],
-        "currentDesignation": "Backend Developer (Node.js)"
+        "currentDesignation": "Backend Developer (Node.js)",
+        "linkedinProfileLink": "www.linkedin.com/in/pascoal-daniel-fernandes-419288205"
     },
     "summary": [
         "Driven and results-oriented backend developer with 1 year of experience in Node.js, seeking to leverage strong software development and troubleshooting skills in a challenging role.",
@@ -69,7 +70,7 @@
     "technologies": [
         "HTML, CSS, JavaScript",
         "Python, Node.js, PHP, C#",
-        "Vue.js, Express.js",
+        "Vue.js, Express.js, React.js, Nuxt.js, Next.js",
         "LAMP Stack, MERN Stack",
         "MySQL, MongoDB",
         "Microsoft Windows 10 / 11 / Server Administration",
@@ -126,10 +127,12 @@
             "duration": "Current",
             "jobDescription": [
                 "Implemented various new requirements and maintained in Node.js, Vue.js 2 & 3 (Nuxt.js), Express.js and MongoDB.",
-                "Optimized APIs using various JavaScript Methodologies.",
-                "Optimized MongoDB Queries for faster API response.",
-                "Integrated various SSO (Single Sign-On) Strategies like Okta, Microsoft, Google",
-                "Integrated APIs from ZKTECO Biotime for attendance retrival    ."
+                "Implemented code using the MCS (Model-Controller-Services) Architecture",
+                "Optimized APIs using various JavaScript Methodologies for faster API responses.",
+                "Optimized MongoDB Queries for faster API responses.",
+                "Invented custom in-house Node.js package to provide different SSO (Single Sign-On) Strategies for Microsoft and Google.",
+                "Integrated various SSO (Single Sign-On) Strategies like Okta, Microsoft, Google, etc.",
+                "Integrated APIs from ZKTECO Biotime for attendance retrival."
             ]
         }
     ],
