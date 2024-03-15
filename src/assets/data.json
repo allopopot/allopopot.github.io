@@ -32,9 +32,9 @@
         "linkedinProfileLink": "www.linkedin.com/in/pascoal-daniel-fernandes-419288205"
     },
     "summary": [
-        "Driven and results-oriented backend developer with 1 year of experience in Node.js, seeking to leverage strong software development and troubleshooting skills in a challenging role.",
-        "Possesses 3 months of IT support experience and enjoys building personal homelabs and exploring DevOps practices. ",
-        "Eager to learn and contribute to a collaborative team environment."
+        "Results-driven backend developer with 1 year of Node.js experience, adept at software development and troubleshooting.",
+        "Possesses 3 months of IT support experience and enjoys building personal homelabs, exploring DevOps practices. ",
+        "Currently expanding skills into C# and ASP.NET, demonstrating eagerness to learn and contribute to a collaborative team environment."
     ],
     "considerationNote": "I respectfully request you to consider my ability, job performance, and adaptability more so than my resume if you offer me the chance to supply my services to your company, as I am confident enough to say that I will do so to the best pleasure of my superiors.",
     "education": [
@@ -128,11 +128,12 @@
             "jobDescription": [
                 "Implemented various new requirements and maintained in Node.js, Vue.js 2 & 3 (Nuxt.js), Express.js and MongoDB.",
                 "Implemented code using the MCS (Model-Controller-Services) Architecture",
-                "Optimized APIs using various JavaScript Methodologies for faster API responses.",
-                "Optimized MongoDB Queries for faster API responses.",
+                "Optimized MongoDB Queries and API logic for faster API responses.",
                 "Invented custom in-house Node.js package to provide different SSO (Single Sign-On) Strategies for Microsoft and Google.",
                 "Integrated various SSO (Single Sign-On) Strategies like Okta, Microsoft, Google, etc.",
-                "Integrated APIs from ZKTECO Biotime for attendance retrival."
+                "Integrated APIs from ZKTECO Biotime for attendance retrival.",
+                "Integrated Microsoft Graph APIs and Google APIs to create meetings, events in calendar and send and retrieve email.",
+                "Implemented API server in MCS (Model-Controller-Services) Architecture thereby improving code readability and reusabilty and decreasing code complexity."
             ]
         }
     ],

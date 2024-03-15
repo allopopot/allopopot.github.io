@@ -11,7 +11,7 @@
                 </p>
             </div>
             <div class="w-4/12">
-                <img class="h-auto w-9/12 ml-auto border-2 rounded-lg" src="/Picture1.jpg" alt="" />
+                <img class="h-auto w-8/12 ml-auto border-2 rounded-lg" src="/Picture1.jpg" alt="" />
             </div>
         </div>
 
@@ -19,14 +19,17 @@
 
         <div>
             <h1 class="text-3xl mb-2">Summary</h1>
-            <p v-for="entry of summary" class="text-justify mb-1">{{ entry }}</p>
+            <ul class="list-disc">
+                <li v-for="entry of summary" class="text-justify mb-1 ml-6">{{ entry }}</li>
+            </ul>
+            <!-- <p v-for="entry of summary" class="text-justify mb-1">{{ entry }}</p> -->
         </div>
 
         <hr class="my-3 border-2 border-gray-300">
 
         <div>
             <h1 class="text-3xl mb-2">Work Experience</h1>
-            <div v-for="entry of workExperience.toReversed().splice(0, 3)" class="mb-2">
+            <div v-for="entry of workExperience.toReversed().splice(0, 2)" class="mb-2">
                 <h2 class="text-xl font-semibold">{{ entry.companyName }} ({{ entry.level }})</h2>
                 <p class="italic underline font-semibold text-gray-700 mb-1">{{ entry.start }} - {{ entry.end }} ({{
                     entry.duration }})
@@ -42,7 +45,7 @@
     <div class="a4page mx-auto p-7">
 
         <div>
-            <div v-for="entry of workExperience.toReversed().splice(3)" class="mb-2">
+            <div v-for="entry of workExperience.toReversed().splice(2)" class="mb-2">
                 <h2 class="text-xl font-semibold">{{ entry.companyName }} ({{ entry.level }})</h2>
                 <p class="italic underline font-semibold text-gray-700 mb-1">
                     {{ entry.start }} - {{ entry.end }} ({{ entry.duration }})
