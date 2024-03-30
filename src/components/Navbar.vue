@@ -8,14 +8,35 @@
         </div>
         <div id="NavbarButton">
             <MenuIcon size="30" @click="toggleNav"
-                class="border-2 rounded-md p-1 border-gray-800 active:bg-gray-800 active:text-yellow-300" />
+                class="border-2 rounded-md p-1 border-gray-800 hover:bg-gray-800 hover:text-yellow-300" />
         </div>
     </div>
 
-    <div id="NavContainer" class="p-6 overflow-hidden fixed top-0 right-0 translate-x-full bg-yellow-300 text-gray-800 h-full w-full md:w-1/3 shadow-lg flex flex-col z-50 transition-all duration-150 ease-in-out">
+    <div id="NavContainer"
+        class="overscroll-contain p-6 overflow-hidden fixed top-0 right-0 translate-x-full bg-yellow-300 text-gray-800 h-full w-full md:w-1/3 shadow-lg flex flex-col gap-4 z-50 transition-all duration-150 ease-in-out">
         <div class="flex justify-between items-center w-full">
-            <h2 class="text-2xl font-bold">{{ information.firstName }} {{ information.middleName }} {{ information.lastName }}</h2>
-            <CloseIcon size="25" @click="toggleNav"></CloseIcon>
+            <h2 class="text-2xl font-bold">{{ information.firstName }} {{ information.middleName }} {{
+                    information.lastName }}</h2>
+            <CloseIcon size="30" @click="toggleNav" class="hover:bg-gray-800 hover:text-yellow-300 rounded-md p-1">
+            </CloseIcon>
+        </div>
+        <hr class="border border-gray-800">
+        <div class="overflow-auto" @click="closeNav">
+            <RouterLink to="/">
+                <div
+                    class="px-3 py-4 hover:shadow-lg hover:bg-gray-800 hover:text-yellow-300 transition-all duration-150 ease-in-out rounded-lg border border-gray-800 mb-2 font-semibold">
+                    Home</div>
+            </RouterLink>
+            <RouterLink to="/MyPortfolio">
+                <div
+                    class="px-3 py-4 hover:shadow-lg hover:bg-gray-800 hover:text-yellow-300 transition-all duration-150 ease-in-out rounded-lg border border-gray-800 mb-2 font-semibold">
+                    Portfolio</div>
+            </RouterLink>
+            <RouterLink to="/resume">
+                <div
+                    class="px-3 py-4 hover:shadow-lg hover:bg-gray-800 hover:text-yellow-300 transition-all duration-150 ease-in-out rounded-lg border border-gray-800 mb-2 font-semibold">
+                    Resume</div>
+            </RouterLink>
         </div>
     </div>
 </template>
@@ -25,6 +46,7 @@ import MenuIcon from "./MenuIcon.vue"
 import CloseIcon from "./CloseIcon.vue"
 import { information } from "../assets/data.json"
 import { ref } from "vue"
+import { RouterLink } from "vue-router"
 
 const isNavOpened = ref(false)
 
@@ -33,15 +55,19 @@ function toggleNav() {
     const navContainerTargetElement = document.querySelector("#NavContainer")
 
     if (isNavOpened.value === false) {
-        bodyTargetElement.classList.add("overflow-hidden")
         navContainerTargetElement.classList.remove("translate-x-full")
         isNavOpened.value = true
     }
     else {
-        bodyTargetElement.classList.remove("overflow-hidden")
         navContainerTargetElement.classList.add("translate-x-full")
         isNavOpened.value = false
     }
+}
+
+function closeNav() {
+    const navContainerTargetElement = document.querySelector("#NavContainer")
+    navContainerTargetElement.classList.add("translate-x-full")
+    isNavOpened.value = false
 }
 
 </script>

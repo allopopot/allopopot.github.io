@@ -1,4 +1,5 @@
 <template>
+    <Navbar></Navbar>
     <div class="bg-gray-800 text-white h-full pb-1">
         <div class="w-screen md:w-5/6 lg:4/6 mx-auto">
             <video class="w-full md:w-5/6 lg:w-1/2 mx-auto" muted autoplay loop src="/outputDark.webm"></video>
@@ -29,5 +30,6 @@
 </template>
 
 <script setup>
+import Navbar from "../components/Navbar.vue";
 import { information, summary, technologies } from "../assets/data.json"
 </script>
