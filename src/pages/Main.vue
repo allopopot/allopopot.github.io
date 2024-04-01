@@ -1,7 +1,7 @@
 <template>
     <Navbar></Navbar>
     <div class="bg-gray-800 text-white h-full pb-1">
-        <div class="w-screen md:w-5/6 lg:4/6 mx-auto">
+        <div class="w-screen md:w-5/6 lg:w-4/6 mx-auto">
             <video class="w-full md:w-5/6 lg:w-1/2 mx-auto" muted autoplay loop src="/outputDark.webm"></video>
         </div>
 
@@ -16,15 +16,7 @@
             <div class="text-left bg-gray-700 px-3 py-3 rounded-md">
                 <p class="mb-3" v-for="paragraph of summary">{{ paragraph }}</p>
             </div>
-            <hr class="border-yellow-300 border-2 my-3">
-            <div>
-                <h2 class="text-2xl text-yellow-300 font-semibold mb-2">Technologies That I know...</h2>
-                <ul class="list-disc ml-5">
-                    <li class="font-semibold hover:text-yellow-300 hover:underline" v-for="technology of technologies">
-                        {{ technology }}
-                    </li>
-                </ul>
-            </div>
+                
         </div>
     </div>
 </template>

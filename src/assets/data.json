@@ -80,6 +80,30 @@
         "Hardware Troubleshooting",
         "Networking in Cisco, Ubiquiti"
     ],
+    "technologiesAlternative": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python",
+        "Node.js",
+        "PHP",
+        "C#",
+        "Vue.js",
+        "Express.js",
+        "React.js",
+        "Nuxt.js",
+        "Next.js",
+        "MySQL",
+        "MongoDB",
+        "Microsoft Windows 10 / 11",
+        "Windows Server Administration",
+        "Linux (RPM/APT based distributions)",
+        "Podman / Docker",
+        "Hyper-V",
+        "KVM/QEMU",
+        "Hardware Troubleshooting",
+        "Networking in Cisco"
+    ],
     "workExperience": [
         {
             "companyName": "IHCL Taj Holiday Village Resort & Spa, Sinquerim, Goa",
