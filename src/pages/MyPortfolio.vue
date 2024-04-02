@@ -3,8 +3,18 @@
 
     <div class="bg-gray-800 text-white h-full">
         <div class="w-full md:w-3/4 lg:w-6/12 mx-auto p-5">
-            <h1 class="text-2xl font-bold mb-6 p-6 bg-gray-900 rounded-md border-2 border-yellow-300 text-center">My
-                Portfolio</h1>
+            <h1 class="text-2xl font-bold mb-6 p-6 bg-gray-900 rounded-md border-2 border-yellow-300 text-center">
+                {{ information.firstName }} {{ information.middleName }} {{ information.lastName }}
+                <p class="text-lg">{{ information.currentDesignation }}</p>
+            </h1>
+
+            <div class="mb-6">
+                <h2 class="text-xl font-semibold mb-3">A little about myself...</h2>
+                <hr class="my-4 border">
+
+                <p class="text-justify" v-for="entry of summary">{{ entry }}</p>
+            </div>
+
             <div class="mb-6">
                 <h2 class="text-xl font-semibold mb-3">Technologies that I know of...</h2>
                 <hr class="my-4 border">
@@ -111,13 +121,26 @@
                 </div>
             </div>
 
+            <div
+                class="mb-5 p-4 hover:shadow-lg hover:shadow-black border-2 border-white rounded-lg transition-all duration-300 ease-out hover:ease-in">
+                <h2 class="text-xl font-semibold mb-5">In-house SSO NPM Package</h2>
+
+                <ul class="list-disc ml-5">
+                    <li>Built a In-house NPM package to simplify SSO implementations for development teams for various clients.</li>
+                    <li>Implemented Google and Microsoft OAuth Providers.</li>
+                    <li>Built with TypeScript.</li>
+                    <li>Modular and easy to integrate into any project.</li>
+                </ul>
+
+            </div>
         </div>
+
     </div>
 </template>
 
 <script setup>
 import Navbar from "../components/Navbar.vue";
 import Carousel from "../components/Carousel.vue";
-import { technologiesAlternative } from "../assets/data.json"
+import { technologiesAlternative, summary, information } from "../assets/data.json"
 
 </script>
