@@ -1,27 +1,46 @@
 <template>
-    <Navbar></Navbar>
-    <div class="bg-gray-800 text-white h-full pb-1">
-        <div class="w-screen md:w-5/6 lg:w-4/6 mx-auto">
-            <video class="w-full md:w-5/6 lg:w-1/2 mx-auto" muted autoplay loop src="/outputDark.webm"></video>
-        </div>
+    <div
+        class="absolute left-0 top-0 z-0 h-screen w-screen bg-gray-800 overflow-hidden flex flex-col flex-wrap justify-center items-center">
 
-        <div class="w-screen md:w-5/6 lg:4/6 mx-auto px-5 mb-4">
-            <h1 class="text-3xl text-center font-semibold text-yellow-300 mb-3">Hello There Mate !!!</h1>
-            <h1 class="text-xl text-center font-semibold text-yellow-300 mb-3">I'm
-                <span class="underline text-decoration-3">
-                    {{ information.firstName }} {{ information.middleName }} {{ information.lastName }}.
-                </span>
-            </h1>
-            <hr class="border-yellow-300 border-2 my-3">
-            <div class="text-left bg-gray-700 px-3 py-3 rounded-md">
-                <p class="mb-3" v-for="paragraph of summary">{{ paragraph }}</p>
-            </div>
-                
-        </div>
+        <video src="/outputDark.webm" class="w-full h-auto md:w-3/5 lg:w-1/2 mx-auto" autoplay muted loop></video>
+
+        <h1 class="text-yellow-300 text-center font-semibold text-4xl mb-2">Hello There Mate !!!</h1>
+        <p class="text-yellow-300 text-center font-semibold text-2xl mb-2 mx-auto">I'm
+            {{ information.firstName }} {{ information.middleName }} {{ information.lastName }}.
+        </p>
+        <RouterLink to="/MyPortfolio">
+            <button id="portfolio-button"
+                class="px-8 py-3 bg-yellow-300 rounded-full text-center font-semibold text-xl block mx-auto">Visit My
+                Portfolio</button>
+        </RouterLink>
     </div>
 </template>
 
 <script setup>
-import Navbar from "../components/Navbar.vue";
-import { information, summary, technologies } from "../assets/data.json"
+import { RouterLink } from "vue-router";
+import { information } from "../assets/data.json"
 </script>
+
+
+<style scoped>
+#portfolio-button {
+    box-shadow: 0 0 0px 0px #fde047;
+    animation-name: shadow-glow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes shadow-glow {
+    0% {
+        box-shadow: 0 0 2rem 0px #fde047;
+
+    }
+
+    100% {
+        box-shadow: 0 0 0px 0px #fde047;
+
+    }
+}
+</style>
