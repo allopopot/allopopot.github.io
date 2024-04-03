@@ -7,7 +7,10 @@
                 <p class="font-semibold underline mb-1">{{ information.currentDesignation }}</p>
                 <p class="font-semibold text-sm italic text-gray-500 mb-1">{{ information.email }} | {{
                     information.phone.join(" | ") }}</p>
-                <p class="font-semibold text-sm italic text-gray-500 underline">{{ information.linkedinProfileLink }}
+                <p class="font-semibold text-sm italic text-gray-500 underline mb-1">{{ information.linkedinProfileLink
+                    }}
+                </p>
+                <p class="font-semibold text-sm italic text-gray-500 underline">{{ information.website }}
                 </p>
             </div>
             <div class="w-4/12">
@@ -85,6 +88,20 @@
     </div>
 
     <div class="a4page mx-auto p-7">
+
+        <div>
+            <h1 class="text-3xl mb-2">Certifications</h1>
+
+            <ul class="list-disc ml-6">
+                <li v-for="entry of certifications">
+                    <p>{{ entry.title }}</p>
+                    <p><em>{{ entry.acquired }}</em></p>
+                </li>
+            </ul>
+        </div>
+
+        <hr class="my-3 border-2 border-gray-300">
+
         <div>
             <h1 class="text-3xl mb-2">Achievements</h1>
 
@@ -153,5 +170,5 @@
 </template>
 
 <script setup>
-import { information, education, technologies, summary, workExperience, achievements, considerationNote } from "../assets/data.json"
+import { information, education, technologies, summary, workExperience, achievements, considerationNote, certifications } from "../assets/data.json"
 </script>

@@ -12,7 +12,7 @@
                 <h2 class="text-xl font-semibold mb-3">A little about myself...</h2>
                 <hr class="my-4 border">
 
-                <p class="text-justify" v-for="entry of summary">{{ entry }}</p>
+                <p class="text-justify text-pretty mb-2" v-for="entry of summary">{{ entry }}</p>
             </div>
 
             <div class="mb-6">

@@ -32,7 +32,7 @@
                     class="px-3 py-4 hover:shadow-lg hover:bg-gray-800 hover:text-yellow-300 transition-all duration-150 ease-in-out rounded-lg border border-gray-800 mb-2 font-semibold">
                     Portfolio</div>
             </RouterLink>
-            <RouterLink to="/resume">
+            <RouterLink to="/newresume">
                 <div
                     class="px-3 py-4 hover:shadow-lg hover:bg-gray-800 hover:text-yellow-300 transition-all duration-150 ease-in-out rounded-lg border border-gray-800 mb-2 font-semibold">
                     Resume</div>
