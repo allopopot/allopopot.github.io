@@ -16,6 +16,16 @@
             </div>
 
             <div class="mb-6">
+                <h2 class="text-xl font-semibold mb-3">Some Certifications that I have Ascertained...</h2>
+                <hr class="my-4 border">
+
+                <a class="mb-2 flex items-center gap-2 hover:underline decoration-yellow-300 decoration-2" :href="entry.link" v-for="entry of certifications">
+                    <i><LinkIcon class="w-4" /></i>
+                    {{ entry.title }} ({{ entry.acquired }})
+                </a>
+            </div>
+
+            <div class="mb-6">
                 <h2 class="text-xl font-semibold mb-3">Technologies that I know of...</h2>
                 <hr class="my-4 border">
 
@@ -126,7 +136,8 @@
                 <h2 class="text-xl font-semibold mb-5">In-house SSO NPM Package</h2>
 
                 <ul class="list-disc ml-5">
-                    <li>Built a In-house NPM package to simplify SSO implementations for development teams for various clients.</li>
+                    <li>Built a In-house NPM package to simplify SSO implementations for development teams for various
+                        clients.</li>
                     <li>Implemented Google and Microsoft OAuth Providers.</li>
                     <li>Built with TypeScript.</li>
                     <li>Modular and easy to integrate into any project.</li>
@@ -141,6 +152,7 @@
 <script setup>
 import Navbar from "../components/Navbar.vue";
 import Carousel from "../components/Carousel.vue";
-import { technologiesAlternative, summary, information } from "../assets/data.json"
+import LinkIcon from "../components/LinkIcon.vue"
+import { technologiesAlternative, summary, information, certifications } from "../assets/data.json"
 
 </script>
