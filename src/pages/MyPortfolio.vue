@@ -1,6 +1,4 @@
 <template>
-    <Navbar></Navbar>
-
     <div class="bg-gray-800 text-white h-full">
         <div class="w-full md:w-3/4 lg:w-6/12 mx-auto p-5">
             <h1 class="text-2xl font-bold mb-6 p-6 bg-gray-900 rounded-md border-2 border-yellow-300 text-center">
@@ -9,25 +7,35 @@
             </h1>
 
             <div class="mb-6">
-                <h2 class="text-xl font-semibold mb-3">A little about myself...</h2>
-                <hr class="my-4 border">
+                <h2
+                    class="text-xl font-semibold mb-3 text-gray-800 bg-yellow-300 px-3 py-2 border-b-4 border-b-white rounded-t-md">
+                    A little about myself...
+                </h2>
+                <!-- <hr class="my-4 border"> -->
 
                 <p class="text-justify text-pretty mb-2" v-for="entry of summary">{{ entry }}</p>
             </div>
 
             <div class="mb-6">
-                <h2 class="text-xl font-semibold mb-3">Some Certifications that I have Ascertained...</h2>
-                <hr class="my-4 border">
+                <h2
+                    class="text-xl font-semibold mb-3 text-gray-800 bg-yellow-300 px-3 py-2 border-b-4 border-b-white rounded-t-md">
+                    Some Certifications that I have Ascertained...</h2>
+                <!-- <hr class="my-4 border"> -->
 
-                <a class="mb-2 flex items-center gap-2 hover:underline decoration-yellow-300 decoration-2" :href="entry.link" v-for="entry of certifications">
-                    <i><LinkIcon class="w-4" /></i>
+                <a class="mb-2 flex items-center gap-2 hover:underline decoration-yellow-300 decoration-2"
+                    :href="entry.link" v-for="entry of certifications">
+                    <i>
+                        <LinkIcon class="w-4" />
+                    </i>
                     {{ entry.title }} ({{ entry.acquired }})
                 </a>
             </div>
 
             <div class="mb-6">
-                <h2 class="text-xl font-semibold mb-3">Technologies that I know of...</h2>
-                <hr class="my-4 border">
+                <h2
+                    class="text-xl font-semibold mb-3 text-gray-800 bg-yellow-300 px-3 py-2 border-b-4 border-b-white rounded-t-md">
+                    Technologies that I know of...</h2>
+                <!-- <hr class="my-4 border"> -->
 
                 <ul class="flex flex-wrap gap-2 justify-center">
                     <li v-for="entry of technologiesAlternative"
@@ -37,8 +45,10 @@
             </div>
 
             <div class="mb-6">
-                <h2 class="text-xl font-semibold mb-3">Projects that I have worked on...</h2>
-                <hr class="my-4 border">
+                <h2
+                    class="text-xl font-semibold mb-3 text-gray-800 bg-yellow-300 px-3 py-2 border-b-4 border-b-white rounded-t-md">
+                    Projects that I have worked on...</h2>
+                <!-- <hr class="my-4 border"> -->
                 <div
                     class="mb-5 p-4 hover:shadow-lg hover:shadow-black border-2 border-white rounded-lg transition-all duration-300 ease-out hover:ease-in">
                     <h2 class="text-xl font-semibold mb-5">Project Pulse - ERP</h2>

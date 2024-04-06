@@ -8,7 +8,7 @@
         <p class="text-yellow-300 text-center font-semibold text-2xl mb-2 mx-auto">I'm
             {{ information.firstName }} {{ information.middleName }} {{ information.lastName }}.
         </p>
-        <RouterLink to="/MyPortfolio">
+        <RouterLink to="/my-portfolio">
             <button id="portfolio-button"
                 class="px-8 py-3 bg-yellow-300 rounded-full text-center font-semibold text-xl block mx-auto">Visit My
                 Portfolio</button>

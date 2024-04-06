@@ -5,9 +5,8 @@ import NewResume from "./pages/NewResume.vue"
 import MyPortfolio from "./pages/MyPortfolio.vue"
 const routes = [
     { path: '/', component: Main },
-    { path: '/resume', component: Resume },
-    { path: '/NewResume', component: NewResume },
-    { path: '/MyPortfolio', component: MyPortfolio },
+    { path: '/resume', component: NewResume },
+    { path: '/my-portfolio', component: MyPortfolio },
 ]
 
 const router = createRouter({
