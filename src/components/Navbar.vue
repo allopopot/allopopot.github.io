@@ -12,11 +12,11 @@
         </div>
     </div>
 
-    <div id="NavContainer"
+    <div id="NavContainer" :class="{ 'hidden': router.currentRoute.value.path === '/resume' }"
         class="overscroll-contain p-6 overflow-hidden fixed top-0 right-0 translate-x-full bg-yellow-300 text-gray-800 h-full w-full md:w-1/3 shadow-lg flex flex-col gap-4 z-50 transition-all duration-150 ease-in-out">
         <div class="flex justify-between items-center w-full">
             <h2 class="text-2xl font-bold">{{ information.firstName }} {{ information.middleName }} {{
-        information.lastName }}</h2>
+                information.lastName }}</h2>
             <CloseIcon size="30" @click="toggleNav" class="hover:bg-gray-800 hover:text-yellow-300 rounded-md p-1">
             </CloseIcon>
         </div>
