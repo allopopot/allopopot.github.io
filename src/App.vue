@@ -1,5 +1,5 @@
 <template>
-    <div id="mainBody" class="w-screen h-screen absolute left-0 top-0 grid ">
+    <div id="mainBody" class="w-full h-screen absolute left-0 top-0 grid ">
         <Navbar />
         <RouterView v-slot="{ Component }">
             <transition name="fade">
