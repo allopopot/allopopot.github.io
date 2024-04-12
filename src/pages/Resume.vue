@@ -38,9 +38,9 @@
             <div class="col-span-2 pl-4 pt-4">
 
                 <div class="text-center">
-                    <p class="text-xs text-gray-600 mb-1">{{ information.email }}</p>
-                    <p class="text-xs text-gray-600 mb-1">{{ information.phone.join(", ") }}</p>
-                    <p class="text-xs text-gray-600 mb-1">{{ information.website }}</p>
+                    <p class="text-xs font-bold text-gray-600 mb-1">{{ information.email }}</p>
+                    <p class="text-xs font-bold text-gray-600 mb-1">{{ information.phone.join(", ") }}</p>
+                    <p class="text-xs font-bold text-gray-600 mb-1">{{ information.website }}</p>
                 </div>
 
                 <hr class="border my-4">
