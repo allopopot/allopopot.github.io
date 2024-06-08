@@ -1,0 +1,59 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+const title = "Portfolio";
+import portfolioData from "../assets/portfolioData.json";
+---
+
+<MainLayout title={title}>
+    <div class="w-full h-full overflow-auto p-5">
+        <div class="w-full sm:w-full md:w-2/3 lg:w-2/3 mx-auto pt-10">
+            <h1
+                class="text-3xl sm:text-3xl md:text-4xl lg:text-4xl font-semibold text-yellow-300 mb-4"
+            >
+                My Portfolio
+            </h1>
+            <hr class="my-4 border-yellow-300" />
+
+            {
+                portfolioData.map((el,i) => {
+                    return (
+                        <div class="border rounded p-5 mb-4">
+                            <h2 class="text-2xl font-semibold mb-4">
+                                {el.title}
+                            </h2>
+
+                            
+                            {
+                                (el.picturesPath.length>0) &&
+                                <div class="carousel w-full rounded mb-5">
+                                {el.picturesPath.map((al,index) => {
+                                    return (
+                                    <div id={`slide${i}${index}`} class="carousel-item relative w-full">
+                                        <img src={al} class="w-full" />
+                                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                        <a href={`#slide${i}${index-1}`} class="btn btn-circle">❮</a> 
+                                        <a href={`#slide${i}${index+1}`} class="btn btn-circle">❯</a>
+                                        </div>
+                                    </div>
+                                    )
+                                })}
+                            </div>
+                            }
+                            
+
+                            <ul>
+                                {el.description.map((ul) => {
+                                    return (
+                                        <li class="list-disc text-md ml-6">
+                                            {ul}
+                                        </li>
+                                    );
+                                })}
+                            </ul>
+                        </div>
+                    );
+                })
+            }
+        </div>
+    </div>
+</MainLayout>
