@@ -14,8 +14,8 @@
         "visaExpiry": "8th February 2025",
         "maritalStatus": "Single",
         "phone": [
-            "+91 88058 80742",
-            "+971 52 1699501"
+            "+971 52 1699501",
+            "+91 88058 80742"
         ],
         "email": "pascoaldanielfernandes@outlook.com",
         "languages": [
@@ -29,8 +29,9 @@
             "Troubleshooting Computers, Printers and Network Devices"
         ],
         "currentDesignation": "Backend Developer (Node.js)",
-        "linkedinProfileLink": "www.linkedin.com/in/pascoal-daniel-fernandes-419288205",
-        "website": "https://allopopot.github.io"
+        "linkedinProfileLink": "https://www.linkedin.com/in/pascoal-daniel-fernandes-419288205",
+        "website": "https://allopopot.github.io",
+        "githubProfileLink":"https://github.com/allopopot"
     },
     "catchphrase": [
         "Codes with absolute finesse, Deploys with ultimate precision."
