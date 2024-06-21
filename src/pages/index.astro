@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import SocialBar from "../components/SocialBar.astro";
 const title = "Home";
 import { information, catchphrase } from "../assets/data.json";
 ---
@@ -28,6 +29,9 @@ import { information, catchphrase } from "../assets/data.json";
 				</span>
 			</h2>
 			<h3 class="text-lg italic p-5 bg-gray-700 mt-5 mx-4 rounded">"{catchphrase.join("")}"</h3>
+			<div class="mt-3">
+				<SocialBar></SocialBar>
+			</div>
 		</div>
 	</div>
 </MainLayout>
