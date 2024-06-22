@@ -31,7 +31,7 @@
         "currentDesignation": "Backend Developer (Node.js)",
         "linkedinProfileLink": "https://www.linkedin.com/in/pascoal-daniel-fernandes-419288205",
         "website": "https://allopopot.github.io",
-        "githubProfileLink":"https://github.com/allopopot"
+        "githubProfileLink": "https://github.com/allopopot"
     },
     "catchphrase": [
         "Codes with absolute finesse, Deploys with ultimate precision."
@@ -141,13 +141,14 @@
             "companyName": "Ajency.in, Panjim, Goa (Internship)",
             "level": "Intern",
             "designation": "Node.js Developer",
-            "start": "16 February 2022",
+            "start": "10 June 2021",
             "end": "17 June 2022",
-            "duration": "4 Months",
+            "duration": "1 Year",
             "jobDescription": [
                 "Created a leave management application using Node.js, React.js, Airtable, Make (Formerly Integromat) and hosted successfully using Heroku and Vercel.",
                 "Integrated Gmail, Google Calendar and Chat Bot in the application.",
-                "Gained hands-on experience with Amazon Web Services."
+                "Gained hands-on experience with Amazon Web Services.",
+                "Maintained Glenmark Pharmaceuticals company portal in PHP and MySQL."
             ]
         },
         {
@@ -155,8 +156,8 @@
             "level": "Junior",
             "designation": "Backend Developer (Node.js)",
             "start": "17 January 2023",
-            "end": "Current",
-            "duration": "Current",
+            "end": "21 Jun 2024",
+            "duration": "1 Year 6 Months",
             "jobDescription": [
                 "Implemented various new requirements and maintained in Node.js, Vue.js 2 & 3 (Nuxt.js), Express.js and MongoDB.",
                 "Optimized MongoDB Queries and API logic for faster API responses.",
