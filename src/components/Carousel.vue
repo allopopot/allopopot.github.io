@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full h-auto relative">
+    <div :class="`w-full h-auto rounded-lg relative overflow-hidden ${props.class}`">
         <button @click="prev($event)"
             class="absolute top-[50%] left-[2%] p-1 rounded-lg border-yellow-300 border-4 bg-gray-700 opacity-[40%] hover:opacity-[100%] transition translate-y-[-50%]">
             <i class="text-yellow-300">
@@ -11,8 +11,8 @@
             </i>
         </button>
 
-        <div class="border flex flex-row overflow-hidden rounded-lg" ref="imageSlider">
-            <img class="w-full h-auto" :id="clean(image)" :src="image" v-for="image of props.images">
+        <div class="border flex flex-row snap-mandatory snap-x overflow-hidden" ref="imageSlider">
+            <img class="w-full h-auto snap-center" :id="clean(image)" :src="image" v-for="image of props.images">
         </div>
 
         <button @click="next($event)"
@@ -31,13 +31,42 @@
 
 
 <script setup>
-import { ref, onBeforeMount } from "vue"
+import { ref, onMounted } from "vue"
 
-const props = defineProps({ 'images': Array })
+const props = defineProps({ 'images': Array, "class": String })
 const imageSlider = ref(null)
 
 const currentPosition = ref(0)
 
+var touchTrails = []
+onMounted(() => {
+    imageSlider.value.addEventListener("touchmove", (ev) => {
+        touchTrails.push(ev.changedTouches[0].pageX)
+    })
+
+    imageSlider.value.addEventListener("touchstart", (ev) => {
+        touchTrails = []
+    })
+
+    imageSlider.value.addEventListener("touchend", (ev) => {
+        if (touchTrails.some((el, index, arr) => {
+            if (el <= arr[index + 1]) {
+                return true
+            }
+        })) {
+            prev(ev)
+        }
+
+        if (touchTrails.some((el, index, arr) => {
+            if (el >= arr[index + 1]) {
+                return true
+            }
+        })) {
+            next(ev)
+        }
+    })
+
+})
 
 function prev(event) {
     event.preventDefault()
