@@ -46,9 +46,9 @@ export default function Sidebar() {
             <div className="w-full h-full overflow-hidden mt-5">
                 <div className="w-full h-full overflow-auto p-5 pt-0 text-justify">
                     {
-                        links.map((el) => {
+                        links.map((el, index) => {
                             return (
-                                <a href={el.link}>
+                                <a href={el.link} key={index}>
                                     <div className="w-full py-3 px-4 rounded border-gray-900 mb-3 border-2 hover:bg-gray-900 hover:text-yellow-300 transition-all shadow-lg">
                                         <p className="font-semibold">{el.nav}</p>
                                     </div>
