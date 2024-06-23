@@ -21,7 +21,7 @@ const title = "Resume";
         <title>{title}</title>
     </head>
     <body>
-        <div class="w-[210mm] h-[297mm] mx-auto leading-snug">
+        <div class="w-[210mm] h-[297mm] mx-auto leading-snug overflow-hidden">
             <div class="flex items-center flex-nowrap mb-6">
                 <div class="w-3/4">
                     <h1 class="text-4xl font-bold">
@@ -58,37 +58,38 @@ const title = "Resume";
                             Work Experience
                         </h2>
                         {
-                            workExperience
-                                .toReversed()
-                                .splice(0, 2)
-                                .map((entry) => {
-                                    return (
-                                        <div class="mb-2">
-                                            <h2 class="text-lg font-semibold">
-                                                {entry.companyName}
-                                            </h2>
-                                            <p>
-                                                <em class="font-semibold underline">
-                                                    {entry.designation}
-                                                </em>
-                                            </p>
-                                            <p class="text-sm italic text-gray-600">
-                                                ({entry.start} - {entry.end}) - {entry.duration}
-                                            </p>
-                                            <ul class="list-disc ml-6">
-                                                {entry.jobDescription.map(
-                                                    (subentry) => {
-                                                        return (
-                                                            <li class="mb-1 text-justify">
-                                                                {subentry}
-                                                            </li>
-                                                        );
-                                                    },
-                                                )}
-                                            </ul>
-                                        </div>
-                                    );
-                                })
+                            workExperience.toReversed().map((entry) => {
+                                return (
+                                    <div class="mb-4">
+                                        <h2 class="text-lg font-semibold">
+                                            {entry.companyName}
+                                        </h2>
+                                        <p>
+                                            <em class="font-semibold underline">
+                                                {entry.designation}
+                                            </em>
+                                        </p>
+                                        <p class="text-sm italic text-gray-600 mb-2">
+                                            <span>
+                                                ({entry.start} - {entry.end})
+                                            </span>
+                                            <span> - </span>
+                                            <span>{entry.duration}</span>
+                                        </p>
+                                        <ul class="list-disc ml-6">
+                                            {entry.jobDescription.map(
+                                                (subentry) => {
+                                                    return (
+                                                        <li class="mb-1 text-justify">
+                                                            {subentry}
+                                                        </li>
+                                                    );
+                                                },
+                                            )}
+                                        </ul>
+                                    </div>
+                                );
+                            })
                         }
                     </div>
                 </div>
@@ -142,30 +143,31 @@ const title = "Resume";
                 </div>
             </div>
         </div>
-        <div class="my-4"></div>
-        <div class="w-[210mm] h-[297mm] mx-auto leading-snug">
+        <div class="w-[210mm] h-[297mm] mx-auto leading-snug overflow-hidden">
             <div>
                 <h2 class="text-2xl font-semibold pb-2">Education</h2>
-                {
-                    education.map((entry) => {
-                        return (
-                            <div class="mb-2">
-                                <h2 class="text-lg font-semibold">
-                                    {entry.degree}
-                                </h2>
-                                <p>
-                                    <em class="font-semibold underline">
-                                        {entry.institution}
-                                    </em>
-                                </p>
-                                <p class="text-sm italic text-gray-600">
-                                    ({entry.start} - {entry.end})
-                                </p>
-                                <p>{entry.score}</p>
-                            </div>
-                        );
-                    })
-                }
+                <ul class="list-disc ml-6">
+                    {
+                        education.map((entry) => {
+                            return (
+                                <li class="mb-2">
+                                    <h2 class="text-lg font-semibold leading-tight">
+                                        {entry.degree}
+                                    </h2>
+                                    <p>
+                                        <em class="font-semibold underline">
+                                            {entry.institution}
+                                        </em>
+                                    </p>
+                                    <p class="text-sm italic text-gray-600">
+                                        ({entry.start} - {entry.end})
+                                    </p>
+                                    <p>{entry.score}</p>
+                                </li>
+                            );
+                        })
+                    }
+                </ul>
             </div>
 
             <hr class="border my-4" />

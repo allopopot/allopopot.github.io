@@ -14,8 +14,7 @@
         "visaExpiry": "8th February 2025",
         "maritalStatus": "Single",
         "phone": [
-            "+971 52 1699501",
-            "+91 88058 80742"
+            "+971 52 1699501"
         ],
         "email": "pascoaldanielfernandes@outlook.com",
         "languages": [
@@ -28,7 +27,7 @@
             "Learning new skills and technologies",
             "Troubleshooting Computers, Printers and Network Devices"
         ],
-        "currentDesignation": "Backend Developer (Node.js)",
+        "currentDesignation": "Full Stack Developer",
         "linkedinProfileLink": "https://www.linkedin.com/in/pascoal-daniel-fernandes-419288205",
         "website": "https://allopopot.github.io",
         "githubProfileLink": "https://github.com/allopopot"
@@ -39,7 +38,7 @@
     "summary": [
         "Versatile developer with over 2 year of experience specializing in Node.js, Express.js, and Vue.js, and React.js.",
         "A firm believer in writing code with simplicity, reusability in mind, and with absolute finesse.",
-        "Possesses strong knowledge of MySQL and MongoDB databases, excelling in creating robust database structures.",
+        "Possesses strong knowledge of MySQL and MongoDB databases, excelling in creating robust database schemas.",
         "Passionate about the world of DevOps, from deployment to software maintenance and monitoring.",
         "Currently expanding skills to include Next.js and ASP.NET within the .NET ecosystem."
     ],
@@ -114,31 +113,7 @@
     ],
     "workExperience": [
         {
-            "companyName": "IHCL Taj Holiday Village Resort & Spa, Sinquerim, Goa",
-            "level": "Trainee",
-            "designation": "I.T. Support Engineer and Network Engineer",
-            "start": "15 May 2019",
-            "end": "15 August 2019",
-            "duration": "3 Months",
-            "jobDescription": [
-                "Monitoring networks and configuring network devices.",
-                "Troubleshooting computer / printer problems.",
-                "Performing preventive maintenance on computers and printers."
-            ]
-        },
-        {
-            "companyName": "HELIX TECH, Porvorim, Goa",
-            "level": "Trainee",
-            "designation": "PHP Developer",
-            "start": "15 September 2019",
-            "end": "15 October 2019",
-            "duration": "1 Month",
-            "jobDescription": [
-                "Maintained Glenmark Pharmaceuticals company portal in PHP and MySQL."
-            ]
-        },
-        {
-            "companyName": "Ajency.in, Panjim, Goa (Internship)",
+            "companyName": "Ajency.in, Panjim, Goa",
             "level": "Intern",
             "designation": "Node.js Developer",
             "start": "10 June 2021",
@@ -156,16 +131,15 @@
             "level": "Junior",
             "designation": "Backend Developer (Node.js)",
             "start": "17 January 2023",
-            "end": "21 Jun 2024",
-            "duration": "1 Year 6 Months",
+            "end": "21 July 2024",
+            "duration": "1 Year, 6 Months",
             "jobDescription": [
-                "Implemented various new requirements and maintained in Node.js, Vue.js 2 & 3 (Nuxt.js), Express.js and MongoDB.",
-                "Optimized MongoDB Queries and API logic for faster API responses.",
+                "Written whole HRDirect API server codebase from scratch and implemented Model-Controller-Services architecture which improved developer productivity and improved API server performance up to 80%.",
+                "Optimized MongoDB Queries and API logic which improved latency by 40%.",
                 "Invented custom in-house Node.js package to provide different SSO (Single Sign-On) Strategies for Microsoft and Google.",
-                "Integrated various SSO (Single Sign-On) Strategies like Okta, Microsoft, Google, etc.",
                 "Integrated APIs from ZKTECO Biotime for attendance retrival.",
                 "Integrated Microsoft Graph APIs and Google APIs to create meetings, events in calendar and send and retrieve email.",
-                "Implemented API server in MCS (Model-Controller-Services) Architecture thereby improving code readability and reusabilty and decreasing code complexity."
+                "Built Authentication Microservice for various in-house software products."
             ]
         }
     ],
