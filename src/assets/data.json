@@ -137,7 +137,7 @@
                 "Written whole HRDirect API server codebase from scratch and implemented Model-Controller-Services architecture which improved developer productivity and improved API server performance up to 80%.",
                 "Optimized MongoDB Queries and API logic which improved latency by 40%.",
                 "Invented custom in-house Node.js package to provide different SSO (Single Sign-On) Strategies for Microsoft and Google.",
-                "Integrated APIs from ZKTECO Biotime for attendance retrival.",
+                "Integrated APIs from ZKTECO Biotime for attendance retrieval.",
                 "Integrated Microsoft Graph APIs and Google APIs to create meetings, events in calendar and send and retrieve email.",
                 "Built Authentication Microservice for various in-house software products."
             ]
