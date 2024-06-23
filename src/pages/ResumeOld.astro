@@ -5,10 +5,11 @@ import {
     technologiesAlternative,
     summary,
     workExperience,
+    achievements,
     considerationNote,
     certifications,
 } from "../assets/data.json";
-const title = "Pascoal Daniel Fernandes | Resume";
+const title = "Resume";
 ---
 
 <html lang="en">
@@ -33,11 +34,6 @@ const title = "Pascoal Daniel Fernandes | Resume";
                     >
                         {information.currentDesignation}
                     </p>
-                    <small class="font-semibold"
-                        >{information.email} | {information.phone.join(", ")} | {
-                            information.website
-                        }</small
-                    >
                 </div>
                 <div class="w-1/4">
                     <img
@@ -48,57 +44,102 @@ const title = "Pascoal Daniel Fernandes | Resume";
                 </div>
             </div>
 
-            <div class="border-t pt-2">
-                <div>
-                    <h2 class="text-2xl font-semibold pb-2">Summary</h2>
-                    <p class="text-justify">{summary.join(" ")}</p>
+            <div class="grid grid-cols-7 grid-rows-1 border-t">
+                <div class="col-span-5 border-r pr-4 pt-4">
+                    <div class="">
+                        <h2 class="text-2xl font-semibold pb-2">Summary</h2>
+                        <p class="text-justify">{summary.join(" ")}</p>
+                    </div>
+
+                    <hr class="border my-4" />
+
+                    <div class="mb-4">
+                        <h2 class="text-2xl font-semibold pb-2">
+                            Work Experience
+                        </h2>
+                        {
+                            workExperience.toReversed().map((entry) => {
+                                return (
+                                    <div class="mb-4">
+                                        <h2 class="text-lg font-semibold">
+                                            {entry.companyName}
+                                        </h2>
+                                        <p>
+                                            <em class="font-semibold underline">
+                                                {entry.designation}
+                                            </em>
+                                        </p>
+                                        <p class="text-sm italic text-gray-600 mb-2">
+                                            <span>
+                                                ({entry.start} - {entry.end})
+                                            </span>
+                                            <span> - </span>
+                                            <span>{entry.duration}</span>
+                                        </p>
+                                        <ul class="list-disc ml-6">
+                                            {entry.jobDescription.map(
+                                                (subentry) => {
+                                                    return (
+                                                        <li class="mb-1 text-justify">
+                                                            {subentry}
+                                                        </li>
+                                                    );
+                                                },
+                                            )}
+                                        </ul>
+                                    </div>
+                                );
+                            })
+                        }
+                    </div>
                 </div>
 
-                <hr class="border my-4" />
+                <div class="col-span-2 pl-4 pt-4">
+                    <div class="text-center">
+                        <p class="text-xs font-bold text-gray-600 mb-1">
+                            {information.email}
+                        </p>
+                        <p class="text-xs font-bold text-gray-600 mb-1">
+                            {information.phone.join(", ")}
+                        </p>
+                        <p class="text-xs font-bold text-gray-600 mb-1">
+                            {information.website}
+                        </p>
+                    </div>
 
-                <div class="mb-4">
-                    <h2 class="text-2xl font-semibold pb-2">Work Experience</h2>
-                    {
-                        workExperience.toReversed().map((entry) => {
-                            return (
-                                <div class="mb-4">
-                                    <h2 class="text-lg font-semibold">
-                                        {entry.companyName}
-                                    </h2>
-                                    <p>
-                                        <em class="font-semibold underline">
-                                            {entry.designation}
-                                        </em>
-                                    </p>
-                                    <p class="text-sm italic text-gray-600 mb-2">
-                                        <span>
-                                            ({entry.start} - {entry.end})
-                                        </span>
-                                        <span> - </span>
-                                        <span>{entry.duration}</span>
-                                    </p>
-                                    <ul class="list-disc ml-6">
-                                        {entry.jobDescription.map(
-                                            (subentry) => {
-                                                return (
-                                                    <li class="mb-1 text-justify">
-                                                        {subentry}
-                                                    </li>
-                                                );
-                                            },
-                                        )}
-                                    </ul>
-                                </div>
-                            );
-                        })
-                    }
-                </div>
+                    <hr class="border my-4" />
 
-                <hr class="border my-4" />
+                    <div>
+                        <h2 class="text-2xl font-semibold pb-2">Skills</h2>
+                        <ul class="list-disc ml-6">
+                            {
+                                technologiesAlternative.map((entry) => {
+                                    return (
+                                        <li class="mb-1 text-sm">{entry}</li>
+                                    );
+                                })
+                            }
+                        </ul>
+                    </div>
 
-                <div class="mb-4">
-                    <h2 class="text-2xl font-semibold pb-2">Skills</h2>
-                    <p>{technologiesAlternative.join(", ")}</p>
+                    <hr class="border my-4" />
+
+                    <div>
+                        <h2 class="text-2xl font-semibold pb-2">
+                            Certifications
+                        </h2>
+                        <ul class="list-disc ml-6">
+                            {
+                                certifications.map((entry) => {
+                                    return (
+                                        <li class="mb-1 text-sm">
+                                            {entry.title}
+                                        </li>
+                                    );
+                                })
+                            }
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,11 +173,11 @@ const title = "Pascoal Daniel Fernandes | Resume";
             <hr class="border my-4" />
 
             <div>
-                <h2 class="text-2xl font-semibold pb-2">Certifications</h2>
+                <h2 class="text-2xl font-semibold pb-2">Achievements</h2>
                 <ul class="list-disc ml-6">
                     {
-                        certifications.map((entry) => {
-                            return <li class="">{entry.title}</li>;
+                        achievements.map((entry) => {
+                            return <li class="">{entry}</li>;
                         })
                     }
                 </ul>
