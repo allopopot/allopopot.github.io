@@ -3,32 +3,13 @@
         "firstName": "Pascoal",
         "middleName": "Daniel",
         "lastName": "Fernandes",
-        "homeAddress": "H.No. 741/A, Pintos Vaddo, Candolim, Bardez, Goa, India",
-        "currentAddress": "Deira, Dubai, United Arab Emirates",
-        "gender": "Male",
-        "birthDate": "8th August, 1998",
         "nationality": "Indian",
-        "religion": "Roman Catholic",
-        "references": "Upon Request",
-        "visaStatus": "UAE Employment Visa",
-        "visaExpiry": "Valid till 21st July, 2024",
-        "maritalStatus": "Single",
         "phone": [
             "+971 52 1699501"
         ],
         "email": "pascoaldanielfernandes@outlook.com",
-        "languages": [
-            "English",
-            "Hindi",
-            "Konkani"
-        ],
-        "hobbies": [
-            "Building Homelabs",
-            "Learning new skills and technologies",
-            "Troubleshooting Computers, Printers and Network Devices"
-        ],
         "currentDesignation": "Full Stack Developer",
-        "linkedinProfileLink": "https://www.linkedin.com/in/pascoal-daniel-fernandes-419288205",
+        "linkedinProfileLink": "https://www.linkedin.com/in/pascoal-daniel-fernandes",
         "website": "https://allopopot.github.io",
         "githubProfileLink": "https://github.com/allopopot"
     },
@@ -39,38 +20,7 @@
         "Versatile developer with over 2 year of experience specializing in Node.js, Express.js, and Vue.js, and React.js.",
         "A firm believer in writing code with simplicity, reusability in mind, and with absolute finesse.",
         "Possesses strong knowledge of MySQL and MongoDB databases, excelling in creating robust database schemas.",
-        "Passionate about the world of DevOps, from deployment to software maintenance and monitoring.",
-        "Currently expanding skills to include Next.js and ASP.NET within the .NET ecosystem."
-    ],
-    "considerationNote": "I respectfully request you to consider my ability, job performance, and adaptability more so than my resume if you offer me the chance to supply my services to your company, as I am confident enough to say that I will do so to the best pleasure of my superiors.",
-    "education": [
-        {
-            "degree": "Master of Science in Computer Science and Information Technology",
-            "start": "July 2020",
-            "end": "June 2022",
-            "institution": "Jain (Deemed to be) University, Bangalore, Karnataka",
-            "score": "CGPA (Cumulative Grade Point Average): 8.77"
-        },
-        {
-            "degree": "Bachelor of Computer Applications",
-            "start": "June 2016",
-            "end": "June 2019",
-            "institution": "St. Xavier's College - Mapusa, Goa",
-            "score": "CPI (Cumulative Performance Index): 7.96"
-        }
-    ],
-    "technologies": [
-        "HTML, CSS, JavaScript",
-        "Python, Node.js, PHP, C#",
-        "Vue.js, Express.js, React.js, Nuxt.js, Next.js, Laravel",
-        "LAMP Stack, MERN Stack",
-        "MySQL, MongoDB",
-        "Microsoft Windows 10 / 11 / Server Administration",
-        "Linux Administration - (RedHat Enterprise Linux, Oracle, Rocky)",
-        "Containerization (Podman / Docker)",
-        "Virtualization (Hyper-V, KVM/QEMU)",
-        "Hardware Troubleshooting",
-        "Networking in Cisco, Ubiquiti"
+        "Passionate about the world of DevOps, from deployment to software maintenance and monitoring."
     ],
     "technologiesAlternative": [
         "HTML",
@@ -81,6 +31,9 @@
         "Laravel",
         "PHP",
         "C#",
+        "Git",
+        "Jira",
+        "TypeScript",
         "Vue.js",
         "Express.js",
         "React.js",
@@ -96,42 +49,6 @@
         "KVM/QEMU",
         "Hardware Troubleshooting",
         "Networking in Cisco"
-    ],
-    "workExperience": [
-        {
-            "companyName": "Ajency.in, Panjim, Goa",
-            "level": "Intern",
-            "designation": "Node.js Developer",
-            "start": "10 June 2021",
-            "end": "17 June 2022",
-            "duration": "1 Year",
-            "jobDescription": [
-                "Created a leave management application using Node.js, React.js, Airtable, Make (Formerly Integromat) and hosted successfully using Heroku and Vercel.",
-                "Integrated Gmail, Google Calendar and Chat Bot in the application.",
-                "Gained hands-on experience with Amazon Web Services.",
-                "Maintained Glenmark Pharmaceuticals company portal in PHP and MySQL."
-            ]
-        },
-        {
-            "companyName": "Nathan Digital, Dubai, UAE",
-            "level": "Junior",
-            "designation": "Backend Developer (Node.js)",
-            "start": "17 January 2023",
-            "end": "21 July 2024",
-            "duration": "1 Year, 6 Months",
-            "jobDescription": [
-                "Written whole HRDirect API server codebase from scratch and implemented Model-Controller-Services architecture which improved developer productivity and improved API server performance up to 80%.",
-                "Optimized MongoDB Queries and API logic which improved latency by 40%.",
-                "Invented custom in-house Node.js package to provide different SSO (Single Sign-On) Strategies for Microsoft and Google.",
-                "Integrated APIs from ZKTECO Biotime for attendance retrieval.",
-                "Integrated Microsoft Graph APIs and Google APIs to create meetings, events in calendar and send and retrieve email.",
-                "Built Authentication Microservice for various in-house software products."
-            ]
-        }
-    ],
-    "achievements": [
-        "Won first place in the Event REDUCE, REUSE, RECYCLE at National Level IT Event, Technotronics 2018 at Dnyanprassak Mandal's College & Research Center, Assagao-Bardez, Goa.",
-        "Runner Up in the Event ANDY THE INVENTOR at National Level IT Event, Technotronics 2018 at Dnyanprassak Mandal's College & Research Center, Assagao-Bardez, Goa."
     ],
     "certifications": [
         {

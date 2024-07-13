@@ -13,10 +13,6 @@ const links = [
         nav: "Portfolio",
         link: "/Portfolio"
     },
-    {
-        nav: "Resume",
-        link: "/Resume"
-    }
 ]
 
 export default function Sidebar() {
