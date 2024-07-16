@@ -3,6 +3,7 @@ import Footer from "../../components/Footer.astro";
 import MainLayout from "../../layouts/MainLayout.astro";
 import portfolioData from "../../assets/portfolioData";
 import { Image } from "astro:assets";
+import Carousel from "../../components/Carousel";
 const { resource } = Astro.params;
 
 export function getStaticPaths() {
@@ -45,15 +46,15 @@ const data = portfolioData.find((el) => {
             </div>
             <hr class="my-4 border-yellow-300" />
 
-            <div
-                class="h-auto gap-4 w-full overflow-y-hidden overflow-x-auto flex flex-row flex-no-wrap"
-            >
+            <Carousel client:only="react">
                 {
                     data?.picturesPath.map((el) => {
-                        return <Image class="rounded" src={el} alt="image" />;
+                        return (
+                            <Image src={el} alt="image" />
+                        );
                     })
                 }
-            </div>
+            </Carousel>
 
             <div class="mt-5">
                 <p class="mb-3">{data?.summary}</p>
