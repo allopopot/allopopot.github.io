@@ -59,7 +59,7 @@ export default function Carousel({ children }: { children: React.ReactNode }) {
         return window.ontouchstart !== undefined;
     }
 
-    return (
+    return ( children &&
         <div className="relative">
             <button className="z-[2] absolute top-[50%] translate-y-[-50%] left-[2%] bg-gray-900/50 p-1 rounded" onClick={() => { prev() }}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
