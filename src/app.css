@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward');
+
+@import 'tailwindcss';
+
+@theme {
+    --color-primary: #FDCA40;
+    --color-secondary: #33A1FD;
+    --color-tertiary: #31393C;
+    --color-alt-one: #2176FF;
+    --color-alt-two: #F79824;
+}
+
+body {
+    @apply bg-neutral-800 text-white p-4
+}
+
+body {
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+*::-webkit-scrollbar {
+    width: .275em;
+    height: .275em;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+}

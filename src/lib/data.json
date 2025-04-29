@@ -1,0 +1,66 @@
+{
+    "catchphrase": [
+        "Handcrafting Software, Since 2023."
+    ],
+    "summary": [
+        "Detail-oriented and analytical full-stack developer with proven expertise in Node.js, Nuxt.js, Next.js and Express.js.",
+        "Skilled in handcrafting secure, high-performance systems that align with business objectives.",
+        "Adept at transforming complex client requirements into scalable technical solutions.",
+        "Experienced in optimizing database structures, streamlining backend processes, and automating deployment workflows.",
+        "Committed to clean, maintainable code and delivering robust, reliable software solutions."
+    ],
+    "technologies": [
+        {
+            "title": "JS/CSS Frameworks",
+            "list": [
+                "Next.js",
+                "Nuxt.js",
+                "Svelte",
+                "Tailwind CSS"
+            ]
+        },
+        {
+            "title": "Programming Languages",
+            "list": [
+                "Node.js",
+                "Golang"
+            ]
+        },
+        {
+            "title": "Database",
+            "list": [
+                "MySQL",
+                "MongoDB",
+                "Postgres"
+            ]
+        },
+        {
+            "title": "Developer Tools",
+            "list": [
+                "Git",
+                "GitHub",
+                "GitHub Actions",
+                "Jira",
+                "Bitbucket",
+                "Docker",
+                "Podman"
+            ]
+        },
+        {
+            "title": "Cloud Services",
+            "list": [
+                "Amazon Web Services",
+                "Supabase",
+                "Vercel"
+            ]
+        },
+        {
+            "title": "Operating Systems",
+            "list": [
+                "Windows",
+                "Red Hat Enterprise Ecosystem (Fedora, CentOS, RHEL, and other alternatives)",
+                "Ubuntu"
+            ]
+        }
+    ]
+}
