@@ -1,0 +1,32 @@
+<script>
+    const { data } = $props();
+</script>
+
+<div class="p-4 pt-8 w-full md:w-5/6 mx-auto">
+    <h1
+        class="font-bold text-5xl underline underline-offset-8 decoration-primary mb-6"
+    >
+        About Myself
+    </h1>
+    <p class="text-lg text-justify mb-6">{data.mydata.summary.join(" ")}</p>
+
+    <h2
+        class="font-bold text-4xl underline underline-offset-8 decoration-primary mb-6"
+    >
+        My Profound Skills
+    </h2>
+    <div class="flex flex-wrap">
+        {#each data.mydata.technologies as ax}
+            <div class="w-full md:w-1/2 lg:w-1/3 py-4">
+                <h3
+                    class="text-xl font-semibold mb-1 underline decoration-primary"
+                >
+                    {ax.title}
+                </h3>
+                {#each ax.list as bx}
+                    <p class="text-lg">{bx}</p>
+                {/each}
+            </div>
+        {/each}
+    </div>
+</div>
