@@ -1,0 +1,65 @@
+---
+import Footer from "../components/Footer.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import portfolioData from "../assets/portfolioData"
+
+const title = "Projects";
+
+const data = portfolioData.map((el) => {
+    return {
+        title: el.title,
+        summary: el.summary,
+        picture: el?.placeholderImage ?? null,
+        link: `/Projects/${el.id}`,
+    };
+});
+---
+
+<MainLayout title={title}>
+    <div class="w-full h-full overflow-auto">
+        <div class="w-full sm:w-full md:w-2/3 lg:w-2/3 mx-auto mt-6 px-5">
+            <h1
+                class="text-3xl sm:text-3xl md:text-4xl lg:text-4xl font-semibold text-yellow-300 mb-4"
+            >
+                My Projects
+            </h1>
+            <hr class="my-4 border-yellow-300" />
+
+            <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-2">
+                {
+                    data.map((el) => {
+                        return (
+                            <div class="card rounded-lg border overflow-hidden">
+                                {el.picture && (
+                                    <div>
+                                        <Image
+                                            class={
+                                                "h-64 w-full object-cover object-left-top"
+                                            }
+                                            src={el.picture}
+                                            alt={el.title}
+                                        />
+                                    </div>
+                                )}
+                                <div class="p-4">
+                                    <h2 class="text-xl font-bold text-yellow-300 underline decoration-400 mb-2">
+                                        {el.title}
+                                    </h2>
+                                    <p class="mb-2">{el.summary}</p>
+                                    <a
+                                        href={el.link}
+                                        class="px-3 py-2 bg-yellow-300 rounded text-gray-900 font-semibold block mt-4 text-center"
+                                    >
+                                        Check it Out ...
+                                    </a>
+                                </div>
+                            </div>
+                        );
+                    })
+                }
+            </div>
+        </div>
+        <Footer />
+    </div>
+</MainLayout>

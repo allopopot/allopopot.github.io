@@ -1,0 +1,40 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Footer from "../components/Footer.astro";
+const title = "Home";
+import { information, catchphrase } from "../assets/data.json";
+import liveLogo from "../assets/outputDark.webm";
+---
+
+<MainLayout title={title}>
+	<div class="w-full h-full overflow-auto grid place-items-center">
+		<div class="w-full sm:w-full md:w-2/3 lg:w-2/5 text-center p-3 my-5">
+			<video
+				src={liveLogo}
+				class="pointer-events-none"
+				autoplay
+				muted
+				loop
+			>
+			</video>
+			<h1 class="text-4xl text-yellow-300 font-semibold">
+				Hello There Mate!!!
+			</h1>
+			<h2 class="text-2xl font-semibold">
+				I'm <span
+					class="underline underline-yellow-300 decoration-yellow-300 decoration-4"
+				>
+					{information.firstName}
+					{information.middleName}
+					{information.lastName}
+				</span>
+			</h2>
+			<h3 class="text-lg italic p-5 bg-gray-700 mt-5 mx-4 rounded">
+				"{catchphrase.join("")}"
+			</h3>
+		</div>
+		<div class="place-self-end w-full">
+			<Footer />
+		</div>
+	</div>
+</MainLayout>

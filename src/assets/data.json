@@ -1,0 +1,65 @@
+{
+    "information": {
+        "firstName": "Pascoal",
+        "middleName": "Daniel",
+        "lastName": "Fernandes",
+        "nationality": "Indian",
+        "phone": [
+            "+971 52 1699501"
+        ],
+        "email": "pascoaldanielfernandes@outlook.com",
+        "currentDesignation": "Full Stack Developer",
+        "linkedinProfileLink": "https://www.linkedin.com/in/pascoal-daniel-fernandes",
+        "website": "https://allopopot.github.io",
+        "githubProfileLink": "https://github.com/allopopot"
+    },
+    "catchphrase": [
+        "Codes with absolute finesse, Deploys with ultimate precision."
+    ],
+    "summary": [
+        "Versatile developer with over 2 year of experience specializing in Node.js, Express.js, and Vue.js, and React.js.",
+        "A firm believer in writing code with simplicity, reusability in mind, and with absolute finesse.",
+        "Possesses strong knowledge of MySQL and MongoDB databases, excelling in creating robust database schemas.",
+        "Passionate about the world of DevOps, from deployment to software maintenance and monitoring."
+    ],
+    "technologiesAlternative": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python",
+        "Node.js",
+        "Laravel",
+        "PHP",
+        "C#",
+        "Git",
+        "Jira",
+        "TypeScript",
+        "Vue.js",
+        "Express.js",
+        "React.js",
+        "Nuxt.js",
+        "Next.js",
+        "MySQL",
+        "MongoDB",
+        "Microsoft Windows 10 / 11",
+        "Windows Server Administration",
+        "Linux (RPM/APT based distributions)",
+        "Podman / Docker",
+        "Hyper-V",
+        "KVM/QEMU",
+        "Hardware Troubleshooting",
+        "Networking in Cisco"
+    ],
+    "certifications": [
+        {
+            "title": "Foundational C# with Microsoft Certification Exam",
+            "acquired": "September 2023",
+            "link": "https://www.freecodecamp.org/certification/fcc895f3618-64fc-48ee-98f7-542ccc37680b/foundational-c-sharp-with-microsoft"
+        },
+        {
+            "title": "Prepare for the Red Hat Certified System Administrator (EX200) Exam",
+            "acquired": "December 2022",
+            "link": "https://www.linkedin.com/learning/certificates/15bee24d25bddec4e598c7bc18bd87dbadd1a5f0c08e166cf1496b44e2193348?accountId=92695330&u=92695330&success=true&authUUID=l9i9SGyWQ1Cz4XqF%2FYoB6Q%3D%3D"
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+---
+import Footer from "../../components/Footer.astro";
+import MainLayout from "../../layouts/MainLayout.astro";
+import portfolioData from "../../assets/portfolioData";
+import { Image } from "astro:assets";
+import Carousel from "../../components/Carousel";
+const { resource } = Astro.params;
+
+export function getStaticPaths() {
+    return portfolioData.map((el) => {
+        return { params: { resource: el.id } };
+    });
+}
+
+const data = portfolioData.find((el) => {
+    return el.id === resource;
+});
+---
+
+<MainLayout>
+    <div class="w-full h-full overflow-auto">
+        <div class="w-full sm:w-full md:w-2/3 lg:w-2/3 mx-auto mt-6 px-5">
+            <div class="flex items-center gap-3">
+                <a href="/Projects">
+                    <i class="text-yellow-300">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="currentColor"
+                            class="bi bi-arrow-left"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+                            ></path>
+                        </svg>
+                    </i>
+                </a>
+                <h1
+                    class="text-3xl sm:text-3xl md:text-4xl lg:text-4xl font-semibold text-yellow-300"
+                >
+                    {data?.title}
+                </h1>
+            </div>
+            <hr class="my-4 border-yellow-300" />
+
+            <Carousel client:only="react">
+                {
+                    data?.picturesPath.map((el) => {
+                        return (
+                            <Image src={el} alt="image" />
+                        );
+                    })
+                }
+            </Carousel>
+
+            <div class="mt-5">
+                <p class="mb-3">{data?.summary}</p>
+                <ul class="list-disc ml-6">
+                    {
+                        data?.description.map((el) => {
+                            return <li>{el}</li>;
+                        })
+                    }
+                </ul>
+            </div>
+        </div>
+        <Footer />
+    </div>
+</MainLayout>
