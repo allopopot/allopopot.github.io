@@ -1,0 +1,34 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import portfolios from "../../assets/portfolio.json";
+import Carousel from "../../components/Carousel.tsx";
+
+export function getStaticPaths() {
+    return portfolios.map((el) => {
+        return { params: { portfolio: el.id } };
+    });
+}
+const { portfolio } = Astro.params;
+
+let data = portfolios.find((el) => el.id === portfolio);
+---
+
+<Layout>
+    <div class="p-4 pt-8 w-full md:w-4/6 mx-auto">
+        <h1
+            class="font-bold text-5xl underline underline-offset-8 decoration-primary mb-10"
+        >
+            {data?.title}
+        </h1>
+
+        {
+            data?.picturesPath && data?.picturesPath?.length > 0 && (
+                <div class="mb-6">
+                    <Carousel client:load images={data?.picturesPath ?? []} />
+                </div>
+            )
+        }
+
+        <p class="text-lg">{data?.description.join(" ")}</p>
+    </div>
+</Layout>

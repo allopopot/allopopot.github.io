@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/Layout.astro";
+import data from "../assets/portfolio.json";
+---
+
+<Layout>
+    <div class="p-4 w-full md:w-4/6 mx-auto">
+        <h1
+            class="font-bold text-5xl underline underline-offset-8 decoration-primary mt-4 mb-10"
+        >
+            My Glorious Portfolio
+        </h1>
+
+        <div class="grid gap-10 grid-cols-1 md:grid-cols-2">
+            {
+                data.map((px) => {
+                    return (
+                        <div class="w-full">
+                            <h2 class="text-3xl font-semibold mb-4 decoration-primary underline">
+                                {px.title}
+                            </h2>
+                            {px.placeholderImage && (
+                                <div class="aspect-video w-full mb-4">
+                                    <img
+                                        class="h-full w-auto object-cover object-top-left rounded"
+                                        src={px.placeholderImage}
+                                        alt={px.placeholderImage}
+                                    />
+                                </div>
+                            )}
+
+                            <p class="text-lg mb-1">{px.summary}</p>
+                            <a
+                                href={`/portfolio/${px.id}`}
+                                class="decoration-primary underline text-primary group"
+                            >
+                                <span> Explore </span>
+                                <span class="material-symbols-outlined !text-xs group-hover:ml-1 transition-all">
+                                    arrow_forward
+                                </span>
+                            </a>
+                        </div>
+                    );
+                })
+            }
+        </div>
+    </div>
+</Layout>
