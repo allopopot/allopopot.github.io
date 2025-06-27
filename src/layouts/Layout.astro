@@ -3,10 +3,17 @@ import "../styles/global.css";
 import Logo from "../assets/logo.svg";
 
 let links = [
-	{ route: "/", text: "Home" },
-	{ route: "/about", text: "About" },
-	{ route: "/portfolio", text: "Portfolio" },
+	{ route: "/home", text: "Home", active: false },
+	{ route: "/about", text: "About", active: false },
+	{ route: "/portfolio", text: "Portfolio", active: false },
 ];
+
+console.log(Astro.url.pathname);
+links.map((el) => {
+	if (Astro.url.pathname.includes(el.route)) {
+		el.active = true;
+	}
+});
 ---
 
 <!doctype html>
@@ -31,6 +38,7 @@ let links = [
 					<span class="">Full-Stack Developer.</span>
 					<br />
 					<span class="italic">Handcrafting Bespoke Software,</span>
+					<br />
 					<span
 						class="italic underline underline-offset-4 decoration-primary"
 						>Since 2023.</span
@@ -46,7 +54,15 @@ let links = [
 				links.map((el) => {
 					return (
 						<a href={el.route} class="contents">
-							<p class="px-4 hover:underline underline-offset-8">
+							<p
+								class="px-4 hover:underline hover:decoration-amber-50 underline-offset-8"
+								class:list={[
+									{
+										"underline decoration-primary":
+											el.active,
+									},
+								]}
+							>
 								{el.text}
 							</p>
 						</a>
