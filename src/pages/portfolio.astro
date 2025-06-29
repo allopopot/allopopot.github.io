@@ -4,7 +4,7 @@ import data from "../assets/portfolio.json";
 ---
 
 <Layout>
-    <div class="p-4 w-full md:w-4/6 mx-auto">
+    <div class="p-4 w-full md:w-5/6 mx-auto">
         <h1
             class="font-bold text-5xl underline underline-offset-8 decoration-primary mt-4 mb-10"
         >
@@ -16,7 +16,7 @@ import data from "../assets/portfolio.json";
                 data.map((px) => {
                     return (
                         <div class="w-full">
-                            <h2 class="text-3xl font-semibold mb-4 decoration-primary underline">
+                            <h2 class="text-4xl font-semibold mb-4 decoration-primary underline">
                                 {px.title}
                             </h2>
                             {px.placeholderImage && (
@@ -29,16 +29,20 @@ import data from "../assets/portfolio.json";
                                 </div>
                             )}
 
-                            <p class="text-lg mb-1">{px.summary}</p>
-                            <a
-                                href={`/portfolio/${px.id}`}
-                                class="decoration-primary underline text-primary group"
-                            >
-                                <span> Explore </span>
-                                <span class="material-symbols-outlined !text-xs group-hover:ml-1 transition-all">
+                            <div class="grid grid-cols-[35fr_1fr] gap-4 items-center">
+                                <p class="text-xl text-balance mb-1">
+                                    {px.summary}
+                                </p>
+                                <a
+                                    href={`/portfolio/${px.id}`}
+                                    class="font-bold text-lg italic decoration-primary underline text-primary group float-right"
+                                >
+                                    <span> Explore </span>
+                                    {/* <span class="material-symbols-outlined !text-lg group-hover:ml-1 transition-all">
                                     arrow_forward
-                                </span>
-                            </a>
+                                </span> */}
+                                </a>
+                            </div>
                         </div>
                     );
                 })
