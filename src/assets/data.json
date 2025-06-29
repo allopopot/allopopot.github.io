@@ -51,7 +51,9 @@
             "list": [
                 "Amazon Web Services",
                 "Supabase",
-                "Vercel"
+                "Vercel",
+                "Cloudflare",
+                "AWS (Amazon Web Services)"
             ]
         },
         {
