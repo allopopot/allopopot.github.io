@@ -42,18 +42,16 @@
                 "GitHub Actions",
                 "Jira",
                 "Bitbucket",
-                "Docker",
-                "Podman"
+                "Podman / Docker"
             ]
         },
         {
             "title": "Cloud Services",
             "list": [
-                "Amazon Web Services",
-                "Supabase",
-                "Vercel",
+                "AWS (Amazon Web Services)",
                 "Cloudflare",
-                "AWS (Amazon Web Services)"
+                "Supabase",
+                "Vercel"
             ]
         },
         {

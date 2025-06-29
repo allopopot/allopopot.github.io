@@ -1,11 +1,11 @@
 {
-  "name": "newsite",
+  "name": "allopopot.github.io",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --host",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "astro preview --host",
     "astro": "astro"
   },
   "dependencies": {
@@ -13,7 +13,7 @@
     "@tailwindcss/vite": "^4.1.7",
     "@types/react": "^19.1.5",
     "@types/react-dom": "^19.1.5",
-    "astro": "^5.8.0",
+    "astro": "^5.10.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "swiper": "^11.2.8",
